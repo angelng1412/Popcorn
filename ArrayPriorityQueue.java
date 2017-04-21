@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.lang.RuntimeException;
 
-public class ArrayPriorityQueue<T extends Comparable<T>> implements APQInter{
+public class ArrayPriorityQueue<T extends Comparable<T>> implements APQInter<T>{
     
     private ArrayList<T> _data;
     
