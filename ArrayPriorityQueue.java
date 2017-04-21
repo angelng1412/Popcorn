@@ -51,6 +51,10 @@ public class ArrayPriorityQueue<T extends Comparable<T>> implements APQInter<T>{
 	return _data.toString();
     }
     
+    public int size(){
+	return _data.size();
+    }
+
     public static void main(String[] args){
 	ArrayPriorityQueue<Integer> bob = new ArrayPriorityQueue();
 	bob.add(9);
