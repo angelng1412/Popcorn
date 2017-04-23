@@ -32,10 +32,7 @@ public class Driver{
 	    System.out.println("What would you like to do?");
 	    System.out.println("1. Add a new entry");
 	    System.out.println("2. Solve the next issue (Queue Size: " + halp.size() + ")");
-	    
-	    if (halp.size() == 0){
-		System.out.println("3. Exit");
-	    }
+	    System.out.println("3. Exit");
 	    
 	    System.out.print("Your selection: ");
 	    selection = Keyboard.readInt();
@@ -71,13 +68,11 @@ public class Driver{
 		System.out.println("\nSuccessfully added to the database of solutions (Solutions: " + halp.sizeData() + ")");
 		
 	    }
-	    else{
-		if (halp.size() == 0 && selection == 3){
+	    else if (selection == 3){
 		    go = false;
-		}
-		else{
+	    }
+	    else{
 		    System.out.println("Please choose a valid selection");
-		}
 	    }
 	}
     }
