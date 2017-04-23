@@ -27,6 +27,15 @@ public class HelpDesk{
 	sol.setSoln("whatever");
 	sol.done();
 	dataBase.add(sol);
+	System.out.println(sol);
+    }
+
+    public int size(){
+	return q.size();
+    }
+
+    public int sizeData(){
+	return dataBase.size();
     }
     
 }
