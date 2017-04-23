@@ -1,4 +1,4 @@
-public class Ticket extends Comparable{
+public class Ticket implements Comparable<Ticket>{
     private int id; 
     private int VIPLevel; 
     private String problem; 
@@ -53,5 +53,14 @@ public class Ticket extends Comparable{
 	else{
 	    return 0; 
 	}
+    }
+
+    public String toString(){
+	String ret = "\n\n";
+	ret += "ID: " + id + "\n";
+	ret += "Name: " + name + "\n";
+	ret += "Problem: " + problem + "\n";
+	ret += "Solution: " + soln;
+	return ret;
     }
 }
