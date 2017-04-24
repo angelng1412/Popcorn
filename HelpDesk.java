@@ -24,7 +24,7 @@ public class HelpDesk{
 
     public void solve(){
 	Ticket sol = q.removeMin();
-	sol.setSoln("whatever");
+	sol.setSoln("Unplug your machine, and then plug it back in");
 	sol.done();
 	dataBase.add(sol);
 	System.out.println(sol);
